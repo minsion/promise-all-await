@@ -5,7 +5,7 @@ promise.all解决多个await互不相干的接口请求
 
 async function init(id){
   const getUser = getUser(id) //请求一
-  const getPost = this.getPost(id) //请求二
+  const getPost = getPost(id) //请求二
   //用 Promise.all() 同时发送两个请求
   try{
     const result = await Promise.all([getUser,getPost])
