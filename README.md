@@ -1,4 +1,4 @@
-## promise-all-await
+## promise-all-await,请求并发问题
 promise.all解决多个await互不相干的接口请求
 
 ```javascript
